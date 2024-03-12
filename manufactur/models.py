@@ -1,8 +1,8 @@
 from django.db import models
 
 class Product(models.Model):
-    name = models.CharField(max_length=100)
-    code = models.CharField(max_length=100)
+    name = models.CharField(max_length=25 , verbose_name="name")
+    code = models.CharField(max_length=25 , verbose_name="code")
 
 class Material(models.Model):
     name = models.CharField(max_length=100)
