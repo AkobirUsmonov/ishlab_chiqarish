@@ -22,7 +22,8 @@ def get_product_materials(request, product_id):
     serializer = ProductMaterialSerializer(product_materials, many=True)
     return Response(serializer.data)
 
-class ProductView(APIView):
-    def get(self, request):
-        product = Product.objects.all()
-        return Response({'product': list(product)})
+# class ProductView(APIView):
+#     def get(self, request):
+#         product = Product.objects.all()
+#         return Response({'product': list(product)})
+
